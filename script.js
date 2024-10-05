@@ -1,14 +1,12 @@
-//import * as THREE from 'three';
-//import * as dat from 'dat.gui';
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-//import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-//import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
-//import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-//import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-//import { OutlinePass } from 'three/addons/postprocessing/OutlinePass.js';
-// import * as THREE from 'https://unpkg.com/three@0.135.0/build/three.module.js';
-// import { OrbitControls } from 'https://unpkg.com/three@0.135.0/examples/jsm/controls/OrbitControls.js';
-// // import { ExtrudeGeometry } from 'https://unpkg.com/three@0.135.0/examples/jsm/geometries/ExtrudeGeometry.js';
+import * as THREE from 'lib/three.module.js';
+import * as dat from 'dat.gui';
+import { OrbitControls } from 'lib/jsm/controls/OrbitControls.js';
+import { EffectComposer } from 'lib/jsm/postprocessing/EffectComposer.js';
+import { UnrealBloomPass } from 'lib/jsm/postprocessing/UnrealBloomPass.js';
+import { RenderPass } from 'lib/jsm/postprocessing/RenderPass.js';
+import { GLTFLoader } from 'lib/jsm/loaders/GLTFLoader.js';
+import { OutlinePass } from 'lib/jsm/postprocessing/OutlinePass.js';
+//import { ExtrudeGeometry } from 'lib/jsm/geometries/ExtrudeGeometry.js';
 
 // import bgTexture1 from '/images/1.jpg';
 // import bgTexture2 from '/images/2.jpg';
