@@ -1,17 +1,28 @@
-import * as THREE from 'lib/three.module.js';
-import * as dat from 'dat.gui';
-import { OrbitControls } from 'lib/jsm/controls/OrbitControls.js';
-import { EffectComposer } from 'lib/jsm/postprocessing/EffectComposer.js';
-import { UnrealBloomPass } from 'lib/jsm/postprocessing/UnrealBloomPass.js';
-import { RenderPass } from 'lib/jsm/postprocessing/RenderPass.js';
-import { GLTFLoader } from 'lib/jsm/loaders/GLTFLoader.js';
-import { OutlinePass } from 'lib/jsm/postprocessing/OutlinePass.js';
+const THREE = window.THREE;
+const OrbitControls = window.OrbitControls;
+const GLTFLoader = window.GLTFLoader;
+const EffectComposer = window.EffectComposer;
+const RenderPass = window.RenderPass;
+const UnrealBloomPass = window.UnrealBloomPass;
+const OutlinePass = window.OutlinePass;
+const dat = window.dat;
+
+
+//import * as THREE from 'lib/three.module.js';
+//import * as dat from 'dat.gui';
+//import { OrbitControls } from 'lib/jsm/controls/OrbitControls.js';
+//import { EffectComposer } from 'lib/jsm/postprocessing/EffectComposer.js';
+//import { UnrealBloomPass } from 'lib/jsm/postprocessing/UnrealBloomPass.js';
+//import { RenderPass } from 'lib/jsm/postprocessing/RenderPass.js';
+//import { GLTFLoader } from 'lib/jsm/loaders/GLTFLoader.js';
+//import { OutlinePass } from 'lib/jsm/postprocessing/OutlinePass.js';
 //import { ExtrudeGeometry } from 'lib/jsm/geometries/ExtrudeGeometry.js';
 
 // import bgTexture1 from '/images/1.jpg';
 // import bgTexture2 from '/images/2.jpg';
 // import bgTexture3 from '/images/3.jpg';
 // import bgTexture4 from '/images/4.jpg';
+/*
 import sunTexture from '/images/sun.jpg';
 import mercuryTexture from '/images/mercurymap.jpg';
 import mercuryBump from '/images/mercurybump.jpg';
@@ -36,6 +47,32 @@ import uranusTexture from '/images/uranus.jpg';
 import uraRingTexture from '/images/uranus_ring.png';
 import neptuneTexture from '/images/neptune.jpg';
 import plutoTexture from '/images/plutomap.jpg';
+*/
+
+const sunTexture = new THREE.TextureLoader().load('/images/sun.jpg');
+const mercuryTexture = new THREE.TextureLoader().load('/images/mercurymap.jpg');
+const mercuryBump = new THREE.TextureLoader().load('/images/mercurybump.jpg');
+const venusTexture = new THREE.TextureLoader().load('/images/venusmap.jpg');
+const venusBump = new THREE.TextureLoader().load('/images/venusmap.jpg');
+const venusAtmosphere = new THREE.TextureLoader().load('/images/venus_atmosphere.jpg');
+const earthTexture = new THREE.TextureLoader().load('/images/earth_daymap.jpg');
+const earthNightTexture = new THREE.TextureLoader().load('/images/earth_nightmap.jpg');
+const earthAtmosphere = new THREE.TextureLoader().load('/images/earth_atmosphere.jpg');
+const earthMoonTexture = new THREE.TextureLoader().load('/images/moonmap.jpg');
+const earthMoonBump = new THREE.TextureLoader().load('/images/moonbump.jpg');
+const marsTexture = new THREE.TextureLoader().load('/images/marsmap.jpg');
+const marsBump = new THREE.TextureLoader().load('/images/marsbump.jpg');
+const jupiterTexture = new THREE.TextureLoader().load('/images/jupiter.jpg');
+const ioTexture = new THREE.TextureLoader().load('/images/jupiterIo.jpg');
+const europaTexture = new THREE.TextureLoader().load('/images/jupiterEuropa.jpg');
+const ganymedeTexture = new THREE.TextureLoader().load('/images/jupiterGanymede.jpg');
+const callistoTexture = new THREE.TextureLoader().load('/images/jupiterCallisto.jpg');
+const saturnTexture = new THREE.TextureLoader().load('/images/saturnmap.jpg');
+const satRingTexture = new THREE.TextureLoader().load('/images/saturn_ring.png');
+const uranusTexture = new THREE.TextureLoader().load('/images/uranus.jpg');
+const uraRingTexture = new THREE.TextureLoader().load('/images/uranus_ring.png');
+const neptuneTexture = new THREE.TextureLoader().load('/images/neptune.jpg');
+const plutoTexture = new THREE.TextureLoader().load('/images/plutomap.jpg');
 
 // ******  SETUP  ******
 console.log("Create the scene");
