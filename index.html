@@ -16,8 +16,7 @@
 </head>
 <body>
     <div id="gui-container"></div>
-    <div><script type="module" src="./script.js"></script></div>
-    
+
     <div id="planetInfo" class="planet-info">
         <div class="planet-info-content">
             <span class="close-btn" onclick="closeInfo()">&times;</span>
@@ -25,5 +24,35 @@
             <p id="planetDetails"></p>
         </div>
     </div>
+
+    <script type="module">
+      // Import main Three.js library
+      import * as THREE from 'https://cdn.jsdelivr.net/npm/three/build/three.module.js';
+      
+      // Import dat.gui library
+      import * as dat from 'https://cdn.jsdelivr.net/npm/dat.gui/build/dat.gui.module.js';
+      
+      // Import necessary Three.js addons and examples
+      import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/controls/OrbitControls.js';
+      import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/loaders/GLTFLoader.js';
+      import { EffectComposer } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/postprocessing/EffectComposer.js';
+      import { RenderPass } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/postprocessing/RenderPass.js';
+      import { UnrealBloomPass } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/postprocessing/UnrealBloomPass.js';
+      import { OutlinePass } from 'https://cdn.jsdelivr.net/npm/three/examples/jsm/postprocessing/OutlinePass.js';
+      
+      // Expose modules globally if your script.js relies on them being available globally
+      window.THREE = THREE;
+      window.dat = dat;
+      window.OrbitControls = OrbitControls;
+      window.GLTFLoader = GLTFLoader;
+      window.EffectComposer = EffectComposer;
+      window.RenderPass = RenderPass;
+      window.UnrealBloomPass = UnrealBloomPass;
+      window.OutlinePass = OutlinePass;
+      
+      // Import and execute the main script
+      import './script.js';
+    </script>
+
 </body>
 </html>
