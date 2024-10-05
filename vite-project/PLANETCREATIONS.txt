@@ -1,0 +1,49 @@
+// ******  PLANET CREATIONS  ******
+const mercury = createPlanet('Mercury', 2.4, 40, 0, mercuryTexture, mercuryBump);
+console.log(`Distance from Mercury to Earth: ${mercury.distanceToEarth}`);
+
+const venus = createPlanet('Venus', 6.1, 65, 3, venusTexture, venusBump, null, venusAtmosphere);
+console.log(`Distance from Venus to Earth: ${venus.distanceToEarth}`);
+
+const earth = createPlanet('Earth', 6.4, 90, 23, earthMaterial, null, null, earthAtmosphere, earthMoon);
+console.log(`Distance from Earth to Earth: ${earth.distanceToEarth}`); // This will be 0
+
+const mars = createPlanet('Mars', 3.4, 115, 25, marsTexture, marsBump);
+console.log(`Distance from Mars to Earth: ${mars.distanceToEarth}`);
+
+// Load Mars moons
+marsMoons.forEach(moon => {
+  loadObject(moon.modelPath, moon.position, moon.scale, function(loadedModel) {
+    moon.mesh = loadedModel;
+    mars.planetSystem.add(moon.mesh);
+    moon.mesh.traverse(function (child) {
+      if (child.isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+      }
+    });
+  });
+});
+
+const jupiter = createPlanet('Jupiter', 69 / 4, 200, 3, jupiterTexture, null, null, null, jupiterMoons);
+console.log(`Distance from Jupiter to Earth: ${jupiter.distanceToEarth}`);
+
+const saturn = createPlanet('Saturn', 58 / 4, 270, 26, saturnTexture, null, {
+  innerRadius: 18,
+  outerRadius: 29,
+  texture: satRingTexture
+});
+console.log(`Distance from Saturn to Earth: ${saturn.distanceToEarth}`);
+
+const uranus = createPlanet('Uranus', 25 / 4, 320, 82, uranusTexture, null, {
+  innerRadius: 6,
+  outerRadius: 8,
+  texture: uraRingTexture
+});
+console.log(`Distance from Uranus to Earth: ${uranus.distanceToEarth}`);
+
+const neptune = createPlanet('Neptune', 24 / 4, 340, 28, neptuneTexture);
+console.log(`Distance from Neptune to Earth: ${neptune.distanceToEarth}`);
+
+const pluto = createPlanet('Pluto', 1, 350, 57, plutoTexture);
+console.log(`Distance from Pluto to Earth: ${pluto.distanceToEarth}`);

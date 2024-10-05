@@ -1,0 +1,56 @@
+{
+    "constellations": [
+        {
+            "name": "Orion",
+            "stars": [
+                { "id": 1, "name": "Betelgeuse", "x": -100, "y": 200, "z": 300, "color": "#ff0000", "size": 1.5 },
+                { "id": 2, "name": "Rigel", "x": 150, "y": -50, "z": 400, "color": "#00ffcc", "size": 1.2 },
+                { "id": 3, "name": "Bellatrix", "x": -120, "y": 100, "z": 320, "color": "#ffffff", "size": 1.0 },
+                { "id": 4, "name": "Saiph", "x": 100, "y": -100, "z": 350, "color": "#aaffff", "size": 1.1 },
+                { "id": 5, "name": "Alnilam", "x": 200, "y": 0, "z": 300, "color": "#ccccff", "size": 1.3 }
+            ]
+        },
+        {
+            "name": "Taurus",
+            "stars": [
+                { "id": 6, "name": "Aldebaran", "x": 300, "y": 200, "z": -150, "color": "#ff6600", "size": 1.7 },
+                { "id": 7, "name": "Elnath", "x": 250, "y": 100, "z": -100, "color": "#ffffff", "size": 1.4 },
+                { "id": 8, "name": "Theta Tauri", "x": 270, "y": 150, "z": -50, "color": "#ffd700", "size": 1.1 }
+            ]
+        },
+        {
+            "name": "Ursa Major",
+            "stars": [
+                { "id": 9, "name": "Dubhe", "x": -300, "y": 400, "z": 100, "color": "#ffffff", "size": 1.5 },
+                { "id": 10, "name": "Merak", "x": -320, "y": 350, "z": 150, "color": "#ffffff", "size": 1.3 },
+                { "id": 11, "name": "Phecda", "x": -330, "y": 300, "z": 200, "color": "#ffffff", "size": 1.2 },
+                { "id": 12, "name": "Megrez", "x": -310, "y": 250, "z": 180, "color": "#ffffff", "size": 1.1 },
+                { "id": 13, "name": "Alioth", "x": -340, "y": 220, "z": 170, "color": "#ffffff", "size": 1.4 }
+            ]
+        },
+        {
+            "name": "Cassiopeia",
+            "stars": [
+                { "id": 14, "name": "Schedar", "x": 100, "y": 300, "z": -200, "color": "#ffcc99", "size": 1.6 },
+                { "id": 15, "name": "Caph", "x": 150, "y": 350, "z": -250, "color": "#ffddcc", "size": 1.3 },
+                { "id": 16, "name": "Gamma Cassiopeiae", "x": 130, "y": 330, "z": -230, "color": "#ffffff", "size": 1.4 }
+            ]
+        },
+        {
+            "name": "Leo",
+            "stars": [
+                { "id": 17, "name": "Regulus", "x": 50, "y": -200, "z": 400, "color": "#ffffff", "size": 1.8 },
+                { "id": 18, "name": "Denebola", "x": 70, "y": -150, "z": 450, "color": "#aaddff", "size": 1.5 },
+                { "id": 19, "name": "Zosma", "x": 90, "y": -100, "z": 420, "color": "#ffffff", "size": 1.2 }
+            ]
+        },
+        {
+            "name": "Scorpius",
+            "stars": [
+                { "id": 20, "name": "Antares", "x": -100, "y": -300, "z": 150, "color": "#ff3300", "size": 1.9 },
+                { "id": 21, "name": "Shaula", "x": -150, "y": -350, "z": 100, "color": "#ffffff", "size": 1.2 },
+                { "id": 22, "name": "Sargas", "x": -130, "y": -320, "z": 130, "color": "#ffaa00", "size": 1.3 }
+            ]
+        }
+    ]
+}
